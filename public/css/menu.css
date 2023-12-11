@@ -1,0 +1,95 @@
+body {
+    overflow: visible;
+    font-family: "Arial", sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+
+  img {
+    size: cover;
+    display: flex;
+    position:fixed;
+    width:100vw;
+    height:100vh;
+    left: 0px;
+    top: 0px;
+    right:0px;
+    bottom:0px;
+    z-index: -1;
+    opacity:80%;
+}
+
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+
+  #menu-list {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+  }
+
+  .menu-card {
+    position:relative;
+    z-index: 1;
+    width: 300px;
+    margin: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s;
+  }
+
+  .menu-card:hover {
+    transform: scale(1.05);
+  }
+
+  .menu-card img {
+    position:relative;
+    z-index: 1;
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .menu-card h2 {
+    position:relative;
+    z-index: 1;
+    padding: 10px;
+    margin: 0;
+    color: #333;
+  }
+
+  .menu-card p {
+    position:relative;
+    z-index: 1;
+    padding: 10px;
+    margin: 0;
+    color: #777;
+  }
+
+  #menu-details {
+    position: relative;
+    z-index: 2; /* 이 값을 더 높게 설정 */
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  #menu-details h2 {
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  #menu-details p {
+    margin: 0;
+    color: #777;
+  }
+  

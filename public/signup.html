@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>signup</title>
+    <link rel="stylesheet" href="css/login.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <h3 class="form-title">Signup</h3>
+      <form>
+        <div class="form-control1">
+          <label for="email">
+            EMAIL
+            <div id="email-center">
+              <input type="email" , name="email" id="email" />
+            </div>
+          </label>
+        </div>
+        <div class="form-control2">
+          <label for="password">
+            PASSWORD
+            <div id="password-center">
+              <input type="password" name="password" id="password" />
+            </div>
+          </label>
+        </div>
+        <div class="form-control3">
+          <label for="password">
+            CHECK PASSWORD
+            <div id="password-center">
+              <input type="password" name="password2" id="password2" />
+            </div>
+            <div>
+              <button type="submit">확인</button>
+              <button type="button">취소</button>
+            </div>
+            <br />
+            <div class="error"></div>
+            <br />
+          </label>
+        </div>
+      </form>
+    </div>
+    <script type="module" src="js/signup.js"></script>
+  </body>
+</html>

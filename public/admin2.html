@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>메뉴 리스트</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+      }
+
+      h1 {
+        text-align: center;
+        color: #333;
+      }
+
+      #menu-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 20px;
+      }
+
+      .menu-card {
+        width: 300px;
+        margin: 20px;
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        overflow: hidden;
+        transition: transform 0.3s;
+      }
+
+      .menu-card:hover {
+        transform: scale(1.05);
+      }
+
+      .menu-card img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        border-bottom: 1px solid #ddd;
+      }
+
+      .menu-card h2 {
+        padding: 10px;
+        margin: 0;
+        color: #333;
+      }
+
+      .menu-card p {
+        padding: 10px;
+        margin: 0;
+        color: #777;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>관리자 모드</h1>
+    <a href="admin.html">메뉴 추가하기</a>
+    <a href="menu.html">돌아가기</a>
+
+    <div id="edit-form" style="display: none">
+      <label for="currentMenuName">기존 메뉴 이름:</label>
+      <input type="text" id="currentMenuName" name="currentMenuName" readonly/>
+      <label for="editMenuName">새로운 메뉴 이름:</label>
+      <input type="text" id="editMenuName" name="editMenuName" required />
+      <label for="editMenuPrice">새로운 메뉴 가격:</label>
+      <input type="text" id="editMenuPrice" name="editMenuPrice" required />
+      <button type="button" onclick="editMenu()">수정</button>
+      <button type="button" onclick="cancelEdit()">취소</button>
+    </div>
+
+    <div id="menu-list"></div>
+
+    <script src="./js/menu2.js"></script>
+  </body>
+</html>

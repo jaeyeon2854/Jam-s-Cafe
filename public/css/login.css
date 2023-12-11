@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+    
+    font-family: "Noto Sans KR",sans-serif;
+}
+
+.form-container{
+    background-color: aqua;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 400px;
+    margin: auto auto;
+    padding: 20px;
+    text-align: right;
+    margin-top: 5rem;
+}
+
+.form-control1{
+   text-align: center;
+}
+.form-control2{
+    text-align: center;
+ }
+
+ .form-control3{
+    text-align: center;
+ }
+
+.form-title{
+    text-align: center;
+    font-size: xx-large;
+    font-weight: lighter;
+}
+
+#email-center{
+   text-align: center;
+}
+
+#password-center{
+    text-align: center;
+}
+
+.links{
+    text-align: center;
+}

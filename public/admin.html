@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/admin.css" />
+    <title>Admin</title>
+  </head>
+  <body>
+    <div class="pack1">
+      <div class="container">
+        <h1>전랩카페 관리자 화면</h1>
+        <form id="admin-form">
+          <div class="form-control">
+            <label for="name">메뉴명</label>
+            <input type="text" name="name" id="name" placeholder="name" />
+          </div>
+          <div class="form-control">
+            <label for="price">메뉴 가격</label>
+            <input type="number" name="price" id="price" placeholder="price" />
+          </div>
+          <div class="form-control">
+            <label for="image">이미지</label>
+            <input type="file" name="image" id="image" placeholder="image" />
+          </div>
+          <div>
+            <button type="submit" id="confirm-btn">확인</button>
+            <button type="button" id="cancel-btn">취소</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="js/admin.js"></script>
+  </body>
+</html>
